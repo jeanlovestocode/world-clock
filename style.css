@@ -1,8 +1,71 @@
-h1{
+body{
+    background-color: #fddce5;
+}
+
+.header{
     text-align: center;
+    font-family: 'Courier Prime', monospace;
+    font-size: 40px;
+    padding: none;
+}
+
+h2{
+    margin: 0 0 5px;
 }
 
 footer{
     text-align: center;
     text-decoration: none;
+    font-size: 12px;
+    opacity: 0.5;
+}
+img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+select{
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+
+.container{
+    max-width: 650px;
+    margin: 70px auto;
+    background-color: #FFFFFF;
+    padding: 35px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    
+}
+
+.cities{
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ececec;
+}
+.cities:last-child{
+    border: none;
+}
+
+.date{
+    opacity: 0.5;
+    font-size: 12px;
+
+}
+.time{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.time small {
+    font-size: 15px;
+    vertical-align: middle;
 }
