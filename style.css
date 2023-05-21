@@ -67,3 +67,8 @@ select {
   font-size: 15px;
   vertical-align: middle;
 }
+
+.home{
+    text-decoration: none;
+    font-size: small;
+}
