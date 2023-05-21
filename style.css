@@ -25,7 +25,7 @@ select {
   font-size: 15px;
 }
 
-.container {
+.container-sm {
   max-width: 650px;
   margin: 70px auto;
   background-color: #ffffff;
