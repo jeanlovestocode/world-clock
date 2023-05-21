@@ -41,7 +41,7 @@ select {
   padding: none;
 }
 
-.cities {
+.city{
   display: flex;
   margin: 15px 0;
   justify-content: space-between;
@@ -50,7 +50,7 @@ select {
   border-bottom: 1px solid #ececec;
 }
 
-.cities:last-child {
+.city:last-child {
   border: none;
 }
 

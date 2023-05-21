@@ -37,5 +37,26 @@ function updateTime() {
   saoCityTime.innerHTML = saoTime.format("h:mm:ss [<small>]A[</small>]");
 }
 
+function updateCity(event) {
+  let cityTZ = event.target.value;
+  let cityName = cityTZ.replace("_", " ").split("/")[1];
+  let cityTime = moment().tz(cityTZ);
+  let selectCities = document.querySelector("#cities");
+  selectCities.innerHTML = `
+        <div class="city">
+                <div>
+                <h2>${cityName}</h2>
+                <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+                </div>
+                <div class="time">${cityTime.format(
+                  "h:mm:ss "
+                )}<small>${cityTime.format("A")}</small></div>
+            </div>
+    `;
+}
+
 updateTime();
 setInterval(updateTime, 1000);
+
+let selectCities = document.querySelector("#city");
+selectCities.addEventListener("change", updateCity);
